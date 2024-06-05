@@ -1,6 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
+	import First_Image from 'C:/Users/camil/my-app/Freezlet-Group/Images/ai-generated-homepage.jpeg';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
@@ -18,11 +19,18 @@
 			</picture>
 		</span>
 
-		to your new<br />Freezlet App
+		<span class="welcome">
+			<picture>
+				<source srcset={First_Image} type="image/webp" />
+				<img src={welcome_fallback} alt="Welcome" />
+			</picture>
+		</span>
+
+		Try our new<br />Freezlet App
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+		Select the <strong>language you want to learn</strong> and your <strong>origin language</strong>
 	</h2>
 
 	<Counter />
