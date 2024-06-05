@@ -10,6 +10,7 @@
 	<meta name="Home Page for our Freezlet App" content="Freezlet Demo App" />
 </svelte:head>
 
+
 <section>
 	<h1>
 		<span class="welcome">
@@ -26,7 +27,7 @@
 			</picture>
 		</span>
 
-		Try our new<br />Freezlet App
+		<p class="text-blue-500">Try our new<br />Freezlet App</p>
 	</h1>
 
 	<h2>
@@ -37,6 +38,8 @@
 </section>
 
 <style>
+	/**@import './app.css';**/
+
 	section {
 		display: flex;
 		flex-direction: column;
