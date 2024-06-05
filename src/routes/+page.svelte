@@ -1,7 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
-	import First_Image from 'C:/Users/camil/my-app/Freezlet-Group/Images/ai-generated-homepage.jpeg';
+	import First_Image from '$lib/images/ai-generated-homepage.jpeg';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
@@ -27,7 +27,7 @@
 			</picture>
 		</span>
 
-		<p class="text-blue-500">Try our new<br />Freezlet App</p>
+		<p class="text-blue-500">Try our new<br />Freezlet App test</p>
 	</h1>
 
 	<h2>
