@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="Home Page for our Freezlet App" content="Freezlet Demo App" />
+	<meta name="Welcome" content="Welcome" />
 </svelte:head>
 
 

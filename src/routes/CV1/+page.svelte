@@ -36,6 +36,7 @@
 <div class="flex justify-center items-center">
 
     <div class="w-40 rounded-full overflow-hidden m-5">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
       <img class="object-cover"  src="src\lib\images\Photo.jpeg" alt="Profile Picture"/>
     </div>
 
@@ -304,7 +305,7 @@
 <!--Harp-->
 <div class="flex flex-wrap justify-center mt-20 mx-30 items-center">
     <div class="flex flex-col">
-      <h1 class="font-bold text-base text-lg">Harp</h1>
+      <h1 class="font-bold text-lg">Harp</h1>
       <span class="text-gray-500 bg-gray-200 p-1 px-3 rounded-full mb-5">(Paris, Madrid and London)</span>
     </div>
     <div class="mx-5">
@@ -337,7 +338,7 @@
 <!--Orienteering-->
 <div class="flex flex-wrap justify-center mt-10 mx-30 items-center">
     <div class="flex flex-col">
-      <h1 class="font-bold text-base text-lg">Orienteering</h1>
+      <h1 class="font-bold text-lg">Orienteering</h1>
       <span class="text-gray-500 bg-gray-200 p-1 px-3 rounded-full mb-5">(France, and UK)</span>
     </div>
     <div class="mx-5">
