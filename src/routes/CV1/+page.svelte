@@ -4,6 +4,9 @@
 </svelte:head>
 
 
+<script>
+	import Camille_Roux from '$lib/images/Camille Roux.jpeg';
+</script>
 
 
 
@@ -37,7 +40,9 @@
 
     <div class="w-40 rounded-full overflow-hidden m-5">
       <!-- svelte-ignore a11y-img-redundant-alt -->
-      <img class="object-cover"  src="src\lib\images\Camille Roux.jpeg" alt="Profile Picture"/>
+      <picture>
+				<source srcset={Camille_Roux} type="image/jpeg" />
+			</picture>
     </div>
 
     <!--https://github.com/Cam-com/Website-CR/blob/main/Images/Profile.JPEG-->
