@@ -1,6 +1,5 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
 	import First_Image from '$lib/images/ai-generated-homepage.jpeg';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
@@ -11,15 +10,15 @@
 </svelte:head>
 
 
+
+
+<div class="bg-slate-500">
+	Hello
+</div>
+
+
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
 		<span class="welcome">
 			<picture>
 				<source srcset={First_Image} type="image/webp" />
