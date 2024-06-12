@@ -37,7 +37,7 @@
 
     <div class="w-40 rounded-full overflow-hidden m-5">
       <!-- svelte-ignore a11y-img-redundant-alt -->
-      <img class="object-cover"  src="src\lib\images\Photo.jpeg" alt="Profile Picture"/>
+      <img class="object-cover"  src="src\lib\images\Camille Roux.jpeg" alt="Profile Picture"/>
     </div>
 
     <!--https://github.com/Cam-com/Website-CR/blob/main/Images/Profile.JPEG-->
