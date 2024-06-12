@@ -21,7 +21,7 @@
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={First_Image} type="image/webp" />
+				<source srcset={First_Image} type="image/jpeg" />
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
