@@ -361,8 +361,8 @@
             <br>- Will experience first hand how far China has taken its technogology and learn about <strong>upcoming its StartUps</strong>
             <br>- Built an online Flash card tool to revise <strong>Mandarin</strong> vocabulary in preparation for this exchange
         </span>
-        <a href="Vocabulary.html"><button class="block bg-blue-100 p-1 px-3 mt-3 rounded-full font-semibold underline 
-          hover:transition-all ease-in-out hover:scale-110 duration-300">See link - Vocabulary corner</button></a>
+        <!--<a href="Vocabulary.html"><button class="block bg-blue-100 p-1 px-3 mt-3 rounded-full font-semibold underline 
+          hover:transition-all ease-in-out hover:scale-110 duration-300">See link - Vocabulary corner</button></a>-->
         </div>
         
         <div class="flex justify-center items-center p-5">
