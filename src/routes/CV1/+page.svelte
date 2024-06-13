@@ -9,7 +9,7 @@
   import LIL_Logo from '$lib/images/LIL-Logo.jpg';
   import LIL_Campus from '$lib/images/LiL-Campus.jpg';
   import LIL_Uniform from '$lib/images/LiL_Uniform.jpeg';
-  import St_Jean_Campus from '$lib/images/St-Jean-Campus.jpg';
+  import St_Jean_Campus from '$lib/images/St_Jean_Campus.jpg';
   import Prepa_Study_Cat from '$lib/images/Prepa_Study_Cat.jpeg';
   import St_Jean_Logo_Prepa from '$lib/images/St-Jean Logo Prepa.webp';
   import ESSEC_Logo from '$lib/images/ESSEC Logo.jpg';
