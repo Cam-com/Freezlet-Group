@@ -29,8 +29,13 @@
   import PKU_Logo from '$lib/images/PKU_Logo.png';
   import PKU_Campus from '$lib/images/PKU_Campus.avif';
   import HARP_Auditorium from '$lib/images/HARP_Auditorium.jpeg';
-      //import Deezer_Logo from '$lib/images/PKU Campus.avif';
-        //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+  import HARP_concert_live from '$lib/images/HARP_concert_live.jpeg';
+  import HARP_concert from '$lib/images/HARP_concert.jpeg';
+  import HARP_cat from '$lib/images/HARP_cat.jpeg';
+  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
 
   
 </script>
@@ -436,17 +441,26 @@
       </picture>
     </div>
     
-    <!--
     <div class="w-1/6 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\HARP concert live.JPEG" alt="Concert"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={HARP_concert_live} type="image/jpeg" />
+        <img class="object-cover" src={HARP_concert_live} alt="HARP_concert_live" />
+      </picture>
     </div>
+
     <div class="w-1/12 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\HARP concert.JPEG" alt="Concert"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={HARP_concert} type="image/jpeg" />
+        <img class="object-cover" src={HARP_concert} alt="HARP_concert" />
+      </picture>
     </div>
+
     <div class="w-1/6 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\HARP cat.JPEG" alt="Harp"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={HARP_cat} type="image/jpeg" />
+        <img class="object-cover" src={HARP_cat} alt="HARP_cat" />
+      </picture>
     </div>
-    -->
 </div>
 
 <!--Orienteering-->
