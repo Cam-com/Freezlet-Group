@@ -5,7 +5,7 @@
 
 
 <script>
-	import Camille_Roux from '$lib\images\Camille_Roux.jpeg';
+	import Camille_Roux from '$lib/images/Camille_Roux.jpeg';
   import LIL_Logo from '$lib/images/LIL-Logo.jpg';
   import LIL_Campus from '$lib/images/LiL - Campus.jpg';
   import LIL_Uniform from '$lib/images/LiL-Uniform.jpeg';
