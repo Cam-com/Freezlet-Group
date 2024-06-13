@@ -1,7 +1,6 @@
 <script>
 	import Counter from './Counter.svelte';
 	import First_Image from '$lib/images/ai-generated-homepage.jpeg';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -21,8 +20,8 @@
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={First_Image} type="image/jpeg" />
-				<img src={welcome_fallback} alt="Welcome" />
+				<source srcset={First_Image} type="image/jpeg"/>
+				<img src={First_Image} alt="Welcome" />
 			</picture>
 		</span>
 

@@ -6,8 +6,30 @@
 
 <script>
 	import Camille_Roux from '$lib/images/Camille Roux.jpeg';
-</script>
+  import LIL_Logo from '$lib/images/LIL-Logo.jpg';
+  import LIL_Campus from '$lib/images/LiL - Campus.jpg';
+  import LIL_Uniform from '$lib/images/LiL-Uniform.jpeg';
+  import St_Jean_Campus from '$lib/images/St Jean Campus.jpg';
+  import Prepa_Study_Cat from '$lib/images/Prepa Study Cat.jpeg';
+  import St_Jean_Logo_Prepa from '$lib/images/St-Jean Logo Prepa.webp';
+  import ESSEC_Logo from '$lib/images/ESSEC Logo.jpg';
+  import ESSEC_Gala from '$lib/images/ESSEC Gala.jpeg';
+  import ESSEC_Campus from '$lib/images/ESSEC Campus.webp';
+  import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  import Deezer_Team from '$lib/images/Deezer Team.jpeg';
+  import Deloitte_Logo from '$lib/images/Deloitte-Logo.jpg';
+  import Deloitte_Building from '$lib/images/Deloitte Logo.jpeg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
 
+  
+</script>
 
 
   <!--Languages and skillqs-->
@@ -40,10 +62,21 @@
 
     <div class="w-40 rounded-full overflow-hidden m-5">
       <!-- svelte-ignore a11y-img-redundant-alt -->
-      <picture>
+      <picture class="block">
 				<source srcset={Camille_Roux} type="image/jpeg" />
+        <img src={Camille_Roux} alt="Camille_Roux" />
 			</picture>
     </div>
+
+    <style>
+      .welcome {
+		  display: block;
+		  position: relative;
+		  width: 100%;
+		  height: 0;
+		  padding: 0 0 calc(100% * 495 / 2048) 0;
+	    }
+    </style>
 
     <!--https://github.com/Cam-com/Website-CR/blob/main/Images/Profile.JPEG-->
     <!--Images\Photo.jpeg-->
@@ -72,7 +105,10 @@
     <!--LiL-->
     <div class="flex justify-center items-center py-3">
       <div class="w-1/12 overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\LIL-Logo.jpg" alt="Campus"/>
+        <picture class="block">
+            <source srcset={LIL_Logo} type="image/jpg" />
+            <img class="object-cover" src={LIL_Logo} alt="LIL-Logo" />
+        </picture>
       </div>
 
       <div class="block">
@@ -82,10 +118,16 @@
       </div>
 
       <div class="w-1/6 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\LiL - Campus.jpg" alt="Campus"/>
+        <picture class="block">
+          <source srcset={LIL_Campus} type="image/jpg" />
+          <img class="object-cover" src={LIL_Campus} alt="LIL_Campus" />
+        </picture>
       </div>
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\LiL-Uniform.JPEG" alt="Campus"/>
+        <picture class="block">
+          <source srcset={LIL_Uniform} type="image/jpeg" />
+          <img class="object-cover" src={LIL_Uniform} alt="LIL_Campus" />
+        </picture>
       </div>
     </div>
 
@@ -93,11 +135,17 @@
     <div class="flex justify-center items-center py-3">
 
       <div class="w-1/6 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\/St Jean Campus.jpg" alt="Campus"/>
+        <picture class="block">
+          <source srcset={St_Jean_Campus} type="image/jpg" />
+          <img class="object-cover" src={St_Jean_Campus} alt="St_Jean_Campus" />
+        </picture>
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\Prepa Study Cat.JPEG" alt="Study Cat"/>
+        <picture class="block">
+          <source srcset={Prepa_Study_Cat} type="image/jpeg" />
+          <img class="object-cover" src={Prepa_Study_Cat} alt="Prepa_Study_Cat" />
+        </picture>
       </div>
 
       <div class="block">
@@ -107,14 +155,20 @@
       </div>
       
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\St-Jean Logo Prepa.webp" alt="Logo"/>
+        <picture class="block">
+          <source srcset={St_Jean_Logo_Prepa} type="image/webp" />
+          <img class="object-cover" src={St_Jean_Logo_Prepa} alt="St_Jean_Logo_Prepa" />
+        </picture>
       </div>
     </div>
 
     <!--ESSEC-->
     <div class="flex justify-center items-center py-3">
       <div class="w-1/12 overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\ESSEC Logo.jpg" alt="Campus"/>
+        <picture class="block">
+          <source srcset={ESSEC_Logo} type="image/jpg" />
+          <img class="object-cover" src={ESSEC_Logo} alt="ESSEC_Logo" />
+        </picture>
       </div>
 
       <div class="block">
@@ -124,10 +178,16 @@
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\ESSEC Gala.JPEG" alt="Campus"/>
+        <picture class="block">
+          <source srcset={ESSEC_Gala} type="image/jpeg" />
+          <img class="object-cover" src={ESSEC_Gala} alt="ESSEC_Gala" />
+        </picture>
       </div>
       <div class="w-1/6 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\\ESSEC Campus.webp" alt="Campus"/>
+        <picture class="block">
+          <source srcset={ESSEC_Campus} type="image/webp" />
+          <img class="object-cover" src={ESSEC_Campus} alt="ESSEC_Campus" />
+        </picture>
       </div>
     </div>
 </div>
@@ -142,7 +202,10 @@
     <div class="flex-col m-20 w-80 text-wrap text-center items-center">
 
       <div class="flex justify-center items-center p-5">
-        <img class="w-1/2"  src="src\lib\images\Deezer_Logo.jpg" alt="Logo"/>
+        <picture class="block w-1/2">
+          <source srcset={Deezer_Logo} type="image/jpg" />
+          <img class="object-cover" src={Deezer_Logo} alt="Deezer_Logo" />
+        </picture>
       </div>
 
       <div class="w-80">
@@ -157,7 +220,10 @@
       </div>
 
       <div class="flex justify-center items-center p-5">
-        <img class="flex justify-center items-center"  src="src\lib\images\Deezer Team.JPEG" alt="Campus"/>
+        <picture class="flex justify-center items-center">
+          <source srcset={Deezer_Team} type="image/jpeg" />
+          <img class="object-cover" src={Deezer_Team} alt="Deezer_Team" />
+        </picture>
       </div>
     </div>
 
@@ -165,7 +231,10 @@
     <div class="flex-col m-20 w-80 text-wrap text-center items-center">
 
       <div class="flex justify-center items-center p-5">
-        <img class="w-1/2"  src="src\lib\images\Deloitte-Logo.jpg" alt="Logo"/>
+        <picture class="block w-1/2">
+          <source srcset={Deloitte_Logo} type="image/jpg" />
+          <img class="object-cover" src={Deloitte_Logo} alt="Deloitte_Logo" />
+        </picture>
       </div>
 
       <div class="w-80">
@@ -182,7 +251,10 @@
       </div>
       
       <div class="flex justify-center items-center p-5">
-        <img class="flex justify-center items-center w-3/4"  src="src\lib\images\Deloitte Logo.JPEG" alt="Campus"/>
+        <picture class="flex justify-center items-center w-3/4">
+          <source srcset={Deloitte_Building} type="image/jpeg" />
+          <img class="object-cover" src={Deloitte_Building} alt="Deloitte_Building" />
+        </picture>
       </div>
     </div>
 </div>
@@ -198,7 +270,7 @@
     <!--BDE-->
     <div class="flex justify-center items-center m-5">
       <div class="w-1/12 overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\BDE Logo.jpg" alt="Logo"/>
+        <!--<img class="object-cover"  src="src\lib\images\BDE Logo.jpg" alt="Logo"/>-->
       </div>
 
       <div class="flex-col text-sm">
@@ -215,7 +287,7 @@
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\BDE Inter pole.JPEG" alt="Inter Pole"/>
+        <!--<img class="object-cover"  src="src\lib\images\BDE Inter pole.JPEG" alt="Inter Pole"/>-->
       </div>
 	</div>
 
@@ -223,8 +295,8 @@
 	<!--Teaching-->
 	<div class="flex justify-center items-center m-5">
       <div class="flex-col w-1/12 overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\EIAPIC Logo.jpg" alt="Logo"/>
-        <img class="object-cover" src="src\lib\images\PHARES Logo.jpg" alt="Logo"/>
+        <!--<img class="object-cover"  src="src\lib\images\EIAPIC Logo.jpg" alt="Logo"/>
+        <img class="object-cover" src="src\lib\images\PHARES Logo.jpg" alt="Logo"/>-->
       </div>
 
       <div class="flex-col text-sm pt-8 pb-5">
@@ -244,7 +316,7 @@
       </div>
 
       <div class="w-1/6 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\ZOOM Screen 1.PNG" alt="Zoom Screen"/>
+        <!--<img class="object-cover"  src="src\lib\images\ZOOM Screen 1.PNG" alt="Zoom Screen"/>-->
       </div>
 	</div>
 
@@ -252,7 +324,7 @@
 	<!--Restaurant-->
 	<div class="flex justify-center items-center m-5">
       <div class="w-1/12 overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\Orangerie Logo.jpg" alt="Logo"/>
+        <!--<img class="object-cover"  src="src\lib\images\Orangerie Logo.jpg" alt="Logo"/>-->
       </div>
 
       <div class="block">
@@ -261,7 +333,7 @@
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <img class="object-cover"  src="src\lib\images\Orangerei Restaurant.jpg" alt="Restaurant"/>
+        <!--<img class="object-cover"  src="src\lib\images\Orangerei Restaurant.jpg" alt="Restaurant"/>-->
       </div>
     </div>
 </div>
@@ -275,7 +347,7 @@
       <div class="flex-col m-20 text-wrap text-center items-center">
 
         <div class="flex justify-center items-center p-5">
-          <img class="w-1/6"  src="src\lib\images\PKU Logo.png" alt="Logo"/>
+          <!--<img class="w-1/6"  src="src\lib\images\PKU Logo.png" alt="Logo"/>-->
         </div>
   
         <div class="flex flex-col justify-center items-center">
@@ -294,7 +366,7 @@
         </div>
         
         <div class="flex justify-center items-center p-5">
-          <img class="flex justify-center items-center w-3/4"  src="src\lib\images\PKU Campus.avif" alt="Campus"/>
+          <!--<img class="flex justify-center items-center w-3/4"  src="src\lib\images\PKU Campus.avif" alt="Campus"/>-->
         </div>
       </div>
     </div>
@@ -325,6 +397,7 @@
     </div>
   </div>
   <div  class="flex flex-wrap justify-center my-5 mx-30">
+    <!--
     <div class="w-1/4 overflow-hidden m-5">
       <img class="object-cover rounded-lg"  src="src\lib\images\HARP Auditorium.jpeg" alt="Auditorium"/>
     </div>
@@ -338,6 +411,7 @@
     <div class="w-1/6 overflow-hidden m-5">
       <img class="object-cover rounded-lg"  src="src\lib\images\HARP cat.JPEG" alt="Harp"/>
     </div>
+    -->
 </div>
 
 <!--Orienteering-->
@@ -351,6 +425,7 @@
     </div>
   </div>
   <div  class="flex flex-wrap justify-center my-5 mx-30">
+    <!--
     <div class="w-1/6 overflow-hidden m-5">
       <img class="object-cover rounded-lg"  src="src\lib\images\Orientation Balise.jpg" alt="Balise"/>
     </div>
@@ -363,6 +438,7 @@
     <div class="w-1/6 overflow-hidden m-5">
       <img class="object-cover rounded-lg"  src="src\lib\images\Orientation Logo.jpg" alt="Logo"/>
     </div>
+    -->
 </div>
 
 
