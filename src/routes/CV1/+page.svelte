@@ -377,7 +377,7 @@
       <div class="flex-col m-20 text-wrap text-center items-center">
 
         <div class="flex justify-center items-center p-5">
-          <picture class="block w-1/12">
+          <picture class="block w-1/6">
             <source srcset={PKU_Logo} type="image/png" />
             <img class="object-cover" src={PKU_Logo} alt="PKU_Logo" />
           </picture>
