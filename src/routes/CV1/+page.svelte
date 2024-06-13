@@ -32,10 +32,10 @@
   import HARP_concert_live from '$lib/images/HARP_concert_live.jpeg';
   import HARP_concert from '$lib/images/HARP_concert.jpeg';
   import HARP_cat from '$lib/images/HARP_cat.jpeg';
-  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
-  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
-  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
-  //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+  import Orientation_Balise from '$lib/images/Orientation_Balise.jpg';
+  import Orientation_tools from '$lib/images/Orientation_tools.jpg';
+  import Orientation_Map from '$lib/images/Orientation_Map.gif';
+  import Orientation_Logo from '$lib/images/Orientation_Logo.jpg';
 
   
 </script>
@@ -474,20 +474,34 @@
     </div>
   </div>
   <div  class="flex flex-wrap justify-center my-5 mx-30">
-    <!--
+    
     <div class="w-1/6 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\Orientation Balise.jpg" alt="Balise"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={Orientation_Balise} type="image/jpg" />
+        <img class="object-cover" src={Orientation_Balise} alt="Orientation_Balise" />
+      </picture>
     </div>
+
     <div class="w-1/12 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\Orientation tools.jpg" alt="Tools"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={Orientation_tools} type="image/jpg" />
+        <img class="object-cover" src={Orientation_tools} alt="Orientation_tools" />
+      </picture>
     </div>
+
     <div class="w-1/4 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\Orioentation Map.gif" alt="Map"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={Orientation_Map} type="image/gif" />
+        <img class="object-cover" src={Orientation_Map} alt="Orientation_Map" />
+      </picture>
     </div>
+
     <div class="w-1/6 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\Orientation Logo.jpg" alt="Logo"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={Orientation_Logo} type="image/jpg" />
+        <img class="object-cover" src={Orientation_Logo} alt="Orientation_Logo" />
+      </picture>
     </div>
-    -->
 </div>
 
 
