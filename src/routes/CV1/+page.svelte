@@ -17,8 +17,8 @@
   import ESSEC_Campus from '$lib/images/ESSEC Campus.webp';
   import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
   import Deezer_Team from '$lib/images/Deezer_Team.jpeg';
-  import Deloitte_Logo from '$lib/images/Deloitte-Logo.jpg';
-  import Deloitte_Building from '$lib/images/Deloitte Logo.jpeg';
+  import Deloitte_Logo from '$lib/images/Deloitte_Logo.jpg';
+  import Deloitte_Building from '$lib/images/Deloitte_Building.jpeg';
   //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
   //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
   //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
