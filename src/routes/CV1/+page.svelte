@@ -21,7 +21,7 @@
   import Deloitte_Building from '$lib/images/Deloitte_Building.jpeg';
   import BDE_Logo from '$lib/images/BDE_Logo.jpg';
   import BDE_Interpole from '$lib/images/BDE_Interpole.jpeg';
-  import EIAPIC_Logo from '$lib/images/EIAPIC_Logo.jpeg';
+  import EIAPIC_Logo from '$lib/images/EIAPIC_Logo.jpg';
   import PHARES_Logo from '$lib/images/PHARES_Logo.jpg';
   import ZOOM_Screen from '$lib/images/ZOOM_Screen1.png';
   import Orangerie_Logo from '$lib/images/Orangerie_Logo.jpg';
