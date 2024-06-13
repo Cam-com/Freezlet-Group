@@ -19,14 +19,18 @@
   import Deezer_Team from '$lib/images/Deezer_Team.jpeg';
   import Deloitte_Logo from '$lib/images/Deloitte_Logo.jpg';
   import Deloitte_Building from '$lib/images/Deloitte_Building.jpeg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
-  //import Deezer_Logo from '$lib/images/Deezer_Logo.jpg';
+  import BDE_Logo from '$lib/images/BDE_Logo.jpg';
+  import BDE_Interpole from '$lib/images/BDE_Interpole.jpeg';
+  import EIAPIC_Logo from '$lib/images/BDE_Interpole.jpeg';
+  import PHARES_Logo from '$lib/images/PHARES_Logo.jpg';
+  import ZOOM_Screen from '$lib/images/ZOOM_Screen1.png';
+  import Orangerie_Logo from '$lib/images/Orangerie_Logo.jpg';
+  import Orangerie_Restaurant from '$lib/images/Orangerie_Restaurant.jpg';
+  import PKU_Logo from '$lib/images/PKU_Logo.png';
+  import PKU_Campus from '$lib/images/PKU_Campus.avif';
+  import HARP_Auditorium from '$lib/images/HARP_Auditorium.jpeg';
+      //import Deezer_Logo from '$lib/images/PKU Campus.avif';
+        //import Deezer_Logo from '$lib/images/PKU Campus.avif';
 
   
 </script>
@@ -270,7 +274,10 @@
     <!--BDE-->
     <div class="flex justify-center items-center m-5">
       <div class="w-1/12 overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\BDE Logo.jpg" alt="Logo"/>-->
+        <picture class="block">
+          <source srcset={BDE_Logo} type="image/jpg" />
+          <img class="object-cover" src={BDE_Logo} alt="BDE_Logo" />
+        </picture>
       </div>
 
       <div class="flex-col text-sm">
@@ -287,7 +294,10 @@
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\BDE Inter pole.JPEG" alt="Inter Pole"/>-->
+        <picture class="block">
+          <source srcset={BDE_Interpole} type="image/jpeg" />
+          <img class="object-cover" src={BDE_Interpole} alt="BDE_Interpole" />
+        </picture>
       </div>
 	</div>
 
@@ -295,8 +305,14 @@
 	<!--Teaching-->
 	<div class="flex justify-center items-center m-5">
       <div class="flex-col w-1/12 overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\EIAPIC Logo.jpg" alt="Logo"/>
-        <img class="object-cover" src="src\lib\images\PHARES Logo.jpg" alt="Logo"/>-->
+        <picture class="block">
+          <source srcset={EIAPIC_Logo} type="image/jpg" />
+          <img class="object-cover" src={EIAPIC_Logo} alt="EIAPIC_Logo" />
+        </picture>
+        <picture class="block">
+          <source srcset={PHARES_Logo} type="image/jpg" />
+          <img class="object-cover" src={PHARES_Logo} alt="PHARES_Logo" />
+        </picture>
       </div>
 
       <div class="flex-col text-sm pt-8 pb-5">
@@ -316,7 +332,10 @@
       </div>
 
       <div class="w-1/6 rounded-lg overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\ZOOM Screen 1.PNG" alt="Zoom Screen"/>-->
+        <picture class="block">
+          <source srcset={ZOOM_Screen} type="image/png" />
+          <img class="object-cover" src={ZOOM_Screen} alt="ZOOM_Screen" />
+        </picture>
       </div>
 	</div>
 
@@ -324,7 +343,10 @@
 	<!--Restaurant-->
 	<div class="flex justify-center items-center m-5">
       <div class="w-1/12 overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\Orangerie Logo.jpg" alt="Logo"/>-->
+        <picture class="block">
+          <source srcset={Orangerie_Logo} type="image/jpg" />
+          <img class="object-cover" src={Orangerie_Logo} alt="Orangerie_Logo" />
+        </picture>
       </div>
 
       <div class="block">
@@ -333,7 +355,10 @@
       </div>
 
       <div class="w-1/12 rounded-lg overflow-hidden m-5">
-        <!--<img class="object-cover"  src="src\lib\images\Orangerei Restaurant.jpg" alt="Restaurant"/>-->
+        <picture class="block">
+          <source srcset={Orangerie_Restaurant} type="image/jpg" />
+          <img class="object-cover" src={Orangerie_Restaurant} alt="Orangerie_Restaurant" />
+        </picture>
       </div>
     </div>
 </div>
@@ -347,7 +372,10 @@
       <div class="flex-col m-20 text-wrap text-center items-center">
 
         <div class="flex justify-center items-center p-5">
-          <!--<img class="w-1/6"  src="src\lib\images\PKU Logo.png" alt="Logo"/>-->
+          <picture class="block">
+            <source srcset={PKU_Logo} type="image/png" />
+            <img class="object-cover" src={PKU_Logo} alt="PKU_Logo" />
+          </picture>
         </div>
   
         <div class="flex flex-col justify-center items-center">
@@ -366,7 +394,10 @@
         </div>
         
         <div class="flex justify-center items-center p-5">
-          <!--<img class="flex justify-center items-center w-3/4"  src="src\lib\images\PKU Campus.avif" alt="Campus"/>-->
+          <picture class="flex justify-center items-center w-3/4">
+            <source srcset={PKU_Campus} type="image/avif" />
+            <img class="object-cover" src={PKU_Campus} alt="PKU_Campus" />
+          </picture>
         </div>
       </div>
     </div>
@@ -396,12 +427,16 @@
         hover:transition-all ease-in-out hover:scale-110 duration-300">See TikTok Account</button></a>
     </div>
   </div>
+
   <div  class="flex flex-wrap justify-center my-5 mx-30">
-    <!--
     <div class="w-1/4 overflow-hidden m-5">
-      <img class="object-cover rounded-lg"  src="src\lib\images\HARP Auditorium.jpeg" alt="Auditorium"/>
+      <picture class="object-cover rounded-lg">
+        <source srcset={HARP_Auditorium} type="image/jpeg" />
+        <img class="object-cover" src={HARP_Auditorium} alt="HARP_Auditorium" />
+      </picture>
     </div>
     
+    <!--
     <div class="w-1/6 overflow-hidden m-5">
       <img class="object-cover rounded-lg"  src="src\lib\images\HARP concert live.JPEG" alt="Concert"/>
     </div>
