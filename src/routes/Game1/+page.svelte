@@ -1,7 +1,8 @@
 <!-- localhost:5137/coopercodes3@gmail.com -->
 <script>
+ /*   
     import supabase from '$lib/db'
-/*
+
     async function getData() {
         const { data, error } = await supabase
         .from('games')
