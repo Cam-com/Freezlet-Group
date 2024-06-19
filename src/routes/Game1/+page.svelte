@@ -1,19 +1,15 @@
 <!-- localhost:5137/coopercodes3@gmail.com -->
-<script>
- /*   
+<script> 
     import supabase from '$lib/db'
 
     async function getData() {
         const { data, error } = await supabase
-        .from('games')
+        .from('HSK 3')
         .select()
         if (error) throw new Error(error.message)
   
         return data
     }
-*/
-    var Question = "Question 1"
-
 
 </script>
 
@@ -23,7 +19,7 @@
 <div class="flex items-center justify-center min-h-screen">
     <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md">
         <div class="w-72 h-32 p-4 border border-gray-300 bg-white m-5 mb-0">
-            <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">Question { Question }</p>
+            <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">Question { getData() }</p>
         </div>
         <div class="w-72 h-20 p-4 border border-gray-300 bg-white m-5 mb-0">
             <textarea class="w-full h-full p-2 border border-gray-300 resize-none" placeholder="Enter traduction here..."></textarea>
