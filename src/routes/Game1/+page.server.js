@@ -17,13 +17,9 @@ export async function load() {
     };
     }
 
-    //return {
-    //    word: data.length ? data[1].Word_FR : null
-    //};
-
-    //let Rand = Math.floor(Math.random() * 5)
+    let Rand = Math.floor(Math.random()* 5)
 
     return {
-        word: data.length ? [data[1].Word_ENG,data[1].Word_FR] : [null,null]
+        word: data.length ? [data[Rand].Word_ENG,data[Rand].Word_FR] : [null,null]
     };
 }
