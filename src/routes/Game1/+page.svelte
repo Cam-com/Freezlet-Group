@@ -14,48 +14,32 @@
 
 </script>
 -->
+<script>
 
-<script context="module">
-    /*
-    import { supabase } from '../supabaseClient.js';
-    */
-   import supabase from '$lib/db'
+    export let data;
 
-  
-    export async function load() {
-      // Fetching a random word from the HSK_3 table
-      const { data, error } = await supabase
-        .from('HSK_3')
-        .select('Word')
-        .order('RANDOM()', { ascending: false })
-        .limit(1);
-  
-      if (error) {
-        console.error('Error fetching data:', error);
-        return {
-          props: {
-            word: null,
-            error: error.message,
-          }
-        };
-      }
-  
-      return {
-        props: {
-          word: data.length ? data[0].Word : null
-        }
-      };
+    // Reactive variable to track the visibility of the div
+    let showDiv = false;
+
+    // Function to handle the "Next" button click
+    function handleBack() {
+        window.location.reload(); // Reload the page
     }
 
-    /**
-	 * @type {any}
-	 */
-    export let word;
-  </script>
+    // Function to handle the submit button click
+    function handleSubmit() {
+    showDiv = true; // Set the variable to true to show the div
+    }
+
+    // Function to handle the "Next" button click
+    function handleNext() {
+        window.location.reload(); // Reload the page
+    }
+</script>
   
   <main>
-    {#if word}
-      <p>Random Word: {word}</p>
+    {#if data.word}
+      <p>Random Word: {data.word}</p>
     {:else}
       <p>No data found</p>
     {/if}
@@ -67,19 +51,20 @@
 <div class="flex items-center justify-center min-h-screen">
     <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md">
         <div class="w-72 h-32 p-4 border border-gray-300 bg-white m-5 mb-0">
-            <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">Question</p>
+            <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">{data.word[0]}</p>
         </div>
         <div class="w-72 h-20 p-4 border border-gray-300 bg-white m-5 mb-0">
             <textarea class="w-full h-full p-2 border border-gray-300 resize-none" placeholder="Enter traduction here..."></textarea>
         </div>
         <div class="flex justify-center">
-            <button class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Back</button>
-            <button class="bg-blue-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-7 mb-0">Submit</button>
-            <button class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Next</button>
+            <button on:click={handleBack} class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Back</button>
+            <button on:click={handleSubmit} class="bg-blue-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-7 mb-0">Submit</button>
+            <button on:click={handleNext} class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Next</button>
         </div>
-        
-        <div class="w-72 h-32 p-4 border border-gray-300 bg-white m-5">
-            <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">Answer</p>
-        </div>
+        {#if showDiv}
+            <div class="w-72 h-32 p-4 border border-gray-300 bg-white m-5">
+                <p class="w-full h-full p-2 text-lg font-bold text-center content-center border border-gray-300 resize-none">{data.word[1]}</p>
+            </div>
+        {/if}
     </div>
 </div>
