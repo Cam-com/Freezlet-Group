@@ -1,19 +1,3 @@
-<!-- localhost:5137/coopercodes3@gmail.com -->
-<!--
-<script> 
-    import supabase from '$lib/db'
-
-
-    async function getData() {
-        let { data: HSK_3, error } = await supabase
-        .from('hsk_3')
-        .select('Word')
-  
-        return data
-    }
-
-</script>
--->
 <script>
 
     export let data;
