@@ -57,24 +57,24 @@
 		<a href="/Game1">
 		<div class="block border-2 border-black  m-5 p-10
 		md:mx-10 md:my-5 md:p-15 lg:mx-15 lg:my-5 lg:p-20 xl:mx-20 xl:my-5 xl:p-25">
-			Game 1
+			<p class="block w-32 text-center">Flash cards</p>
 		</div></a>
 		<a href="/Game2">
 		<div class="block border-2 border-black m-5 p-10
 		md:mx-10 md:my-5 md:p-15 lg:mx-15 lg:my-5 lg:p-20 xl:mx-20 xl:my-5 xl:p-25">
-			Game 2
+		<p class="block w-32 text-center">Pick one</p>
 		</div></a>
 	</div>
 	<div class="flex self-center">
 		<a href="/Game3">
-		<div class="block border-2 border-black m-5 p-10
+		<button class="block border-2 border-black m-5 p-10
 		md:mx-10 md:my-5 md:p-15 lg:mx-15 lg:my-5 lg:p-20 xl:mx-20 xl:my-5 xl:p-25">
-			Game 3
-		</div></a>
+		<p class="block w-32 text-center">Match 5</p>
+		</button></a>
 		<a href="/Game4">
 		<div class="block border-2 border-black m-5 p-10
 		md:mx-10 md:my-5 md:p-15 lg:mx-15 lg:my-5 lg:p-20 xl:mx-20 xl:my-5 xl:p-25">
-			Game 4
+			<p class="block w-32 text-center">Memory</p>
 		</div></a>
 	</div>
 </sections>
