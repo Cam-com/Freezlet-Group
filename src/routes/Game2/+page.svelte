@@ -41,10 +41,22 @@
         window.location.reload(); // Reload the page
     }
 
-    let zoomed = false;
+    let zoomed1 = false;
 
-    function toggleZoom() {
-        zoomed = !zoomed;
+    function toggleZoom1() {
+        zoomed1 = !zoomed1;
+    }
+
+    let zoomed2 = false;
+
+    function toggleZoom2() {
+        zoomed2 = !zoomed2;
+    }
+
+    let zoomed3 = false;
+
+    function toggleZoom3() {
+        zoomed3 = !zoomed3;
     }
 
 </script>
@@ -54,7 +66,7 @@
         transition: transform 0.3s ease;
     }
 
-    .zoomed {
+    .zoomed1, .zoomed2, .zoomed3 {
         transform: scale(1.1); /* Adjust the scale value as needed */
         background-color: rgb(33, 194, 33)
     }
@@ -73,8 +85,8 @@
         <div class="flex">
 
             <button  class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0 cursor-pointer" 
-            class:zoomed
-            on:click={toggleZoom}>
+            class:zoomed1
+            on:click={toggleZoom1}>
 
                 <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">
                     { Mixwords[0] }
@@ -83,8 +95,8 @@
             </button>
 
             <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0 cursor-pointer"
-            class:zoomed
-            on:click={toggleZoom}>
+            class:zoomed2
+            on:click={toggleZoom2}>
 
                 <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">
                     { Mixwords[1] }
@@ -92,8 +104,8 @@
             </button>
 
             <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0 cursor-pointer"
-            class:zoomed
-            on:click={toggleZoom}>
+            class:zoomed3
+            on:click={toggleZoom3}>
 
                 <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">
                     { Mixwords[2] }
