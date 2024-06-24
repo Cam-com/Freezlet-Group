@@ -25,7 +25,7 @@
         --primary-color: #3878DB;
         --text-color: #CED9E7;
     }
-
+/*
     html {
         font-size: 10px;
     }
@@ -39,7 +39,7 @@
     img {
         width: 100%;
     }
-
+*/
     a {
         text-decoration: none;
         color: white;
@@ -168,19 +168,19 @@
         margin-left: 3rem;
         line-height: 1;
     }
-
+/*
     .act_item {
         margin-top: 2rem;
     }
-
+*/
     .expandable {
         overflow: hidden;
     }
-
+/*
     .hidden {
         display: none;
     }
-
+*/
     .icon {
         transition: transform 0.3s;
     }
@@ -201,7 +201,7 @@
     .sub-section:hover {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
-
+/*
     .sub-section-title {
         font-size: 1.6rem;
         font-weight: 700;
@@ -209,11 +209,13 @@
         margin-bottom: 0.5rem;
     }
 
+    
     .sub-section-description {
         font-size: 1.4rem;
         color: var(--text-color);
     }
-</style>
+*/
+    </style>
 
 <div class="container">
     <div class="profile">
@@ -237,10 +239,10 @@
     </div>
     <div class="group-1">
         <div class="exp mb-6 p-4 bg-gray-900 rounded-lg shadow-lg">
-            <h3 class="title" on:click={() => isExperienceOpen = !isExperienceOpen}>
+            <button class="title" on:click={() => isExperienceOpen = !isExperienceOpen}>
                 Expériences
                 <span class="icon {isExperienceOpen ? 'rotate' : ''}">▼</span>
-            </h3>
+            </button>
             {#if isExperienceOpen}
                 <div class="expandable" in:fly={{ y: 20 }} out:fly={{ y: -20 }}>
                     <div class="sub-section">
@@ -274,10 +276,10 @@
             {/if}
         </div>
         <div class="act mb-6 p-4 bg-gray-900 rounded-lg shadow-lg">
-            <h3 class="title" on:click={() => isActivityOpen = !isActivityOpen}>
+            <button class="title" on:click={() => isActivityOpen = !isActivityOpen}>
                 Activités
                 <span class="icon {isActivityOpen ? 'rotate' : ''}">▼</span>
-            </h3>
+            </button>
             {#if isActivityOpen}
                 <div class="expandable" in:fly={{ y: 20 }} out:fly={{ y: -20 }}>
                     <div class="sub-section">
@@ -310,10 +312,10 @@
     </div>
     <div class="group-2">
         <div class="edu mb-6 p-4 bg-gray-900 rounded-lg shadow-lg">
-            <h3 class="title" on:click={() => isEducationOpen = !isEducationOpen}>
+            <button class="title" on:click={() => isEducationOpen = !isEducationOpen}>
                 Formation
                 <span class="icon {isEducationOpen ? 'rotate' : ''}">▼</span>
-            </h3>
+            </button>
             {#if isEducationOpen}
                 <div class="expandable" in:fly={{ y: 20 }} out:fly={{ y: -20 }}>
                     <div class="sub-section">
@@ -344,10 +346,10 @@
             {/if}
         </div>
         <div class="skills mb-6 p-4 bg-gray-900 rounded-lg shadow-lg">
-            <h3 class="title" on:click={() => isSkillsOpen = !isSkillsOpen}>
+            <button class="title" on:click={() => isSkillsOpen = !isSkillsOpen}>
                 Compétences
                 <span class="icon {isSkillsOpen ? 'rotate' : ''}">▼</span>
-            </h3>
+            </button>
             {#if isSkillsOpen}
                 <div class="expandable" in:fly={{ y: 20 }} out:fly={{ y: -20 }}>
                     <div class="sub-section">

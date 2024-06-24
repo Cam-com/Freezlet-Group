@@ -44,6 +44,7 @@
 		"@supabase/auth-ui-svelte": "^0.2.9",
 		"@supabase/ssr": "^0.3.0",
 		"@supabase/supabase-js": "^2.43.5",
+		"dotenv": "^16.4.5",
 		"postcss-load-config": "^5.1.0"
 	}
 }
