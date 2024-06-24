@@ -27,8 +27,25 @@
 
 	function handleSubmit() {
 		alert(
-			`answered question ${selected_learn.id} (${selected_learn.text}) with "${answer}"`
+			`answered question (${selected_learn.id}) (${selected_learn.text}) with "${answer}"
+			answered question (${selected_know.id}) (${selected_know.text}) with "${answer}"`
 		);
+
+		if(selected_learn.id == 1 || selected_learn.id == 3){
+			var TABLE = 'Simple_ENG'
+
+			if(selected_know.id == 'English'){
+				QUESTION = 'SECOND'
+			}
+			if(selected_know_know.id =  'French'){
+				QUESTION = 'FIRST'
+			}
+		}
+		if(selected_learn.id == 2){
+			var TABLE = 'Simple_Span'
+			QUESTION = 'FIRST'
+		}
+
 
 	}
 </script>
