@@ -14,3 +14,4 @@
       <p><strong>Address:</strong> {contactInfo.address}</p>
     </div>
   </div>
+  <a href="/"class="text-right hover:underline">Home</a><br>
