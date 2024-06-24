@@ -49,7 +49,6 @@
         zoomed3 = !zoomed3;
         zoomed1 = false;
         zoomed2 = false;
-       // zoomed3 = false;
     }
 
 
@@ -69,7 +68,7 @@
         transition: transform 0.3s ease;
     }
 
-    .zoomed1, .zoomed2 {
+    .zoomed1, .zoomed2, .zoomed3 {
         transform: scale(1.1); /* Adjust the scale value as needed */
         background-color: rgb(238, 244, 49)
     }
@@ -99,7 +98,9 @@
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{ data.words[1][0] }</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0">
+                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                class:zoomed3
+                on:click={toggleZoom3_First}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{ data.words[2][0] }</p>
                 </button>
 
