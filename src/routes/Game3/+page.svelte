@@ -24,6 +24,8 @@
     let zoomed1 = false;
     let zoomed2 = false;
     let zoomed3 = false;
+    let zoomed4 = false;
+    let zoomed5 = false;
     var selected = ['nothing','nothing'];
     var position = [0,0];
 
@@ -33,6 +35,8 @@
         zoomed1 = !zoomed1;
         zoomed2 = false;
         zoomed3 = false;
+        zoomed4 = false;
+        zoomed5 = false;
     }
 
     function toggleZoom2_First() {
@@ -41,6 +45,8 @@
         zoomed2 = !zoomed2;
         zoomed1 = false;
         zoomed3 = false;
+        zoomed4 = false;
+        zoomed5 = false;
     }
 
     function toggleZoom3_First() {
@@ -49,9 +55,30 @@
         zoomed3 = !zoomed3;
         zoomed1 = false;
         zoomed2 = false;
+        zoomed4 = false;
+        zoomed5 = false;
     }
 
+    function toogleZoom4_First() {
+        selected[0] = data.words[3][0]
+        position[0]= 4
+        zoomed4 = !zoomed4;
+        zoomed1 = false;
+        zoomed2 = false;
+        zoomed3 = false;
+        zoomed5 = false;
+    }
 
+    function toogleZoom5_First() {
+        selected[0] = data.words[4][0]
+        position[0]= 5
+        zoomed5 = !zoomed5;
+        zoomed1 = false;
+        zoomed2 = false;
+        zoomed3 = false;
+        zoomed4 = false;  
+    }  
+    
 
 
 
@@ -68,7 +95,7 @@
         transition: transform 0.3s ease;
     }
 
-    .zoomed1, .zoomed2, .zoomed3 {
+    .zoomed1, .zoomed2, .zoomed3, .zoomed4, .zoomed5 {
         transform: scale(1.1); /* Adjust the scale value as needed */
         background-color: rgb(238, 244, 49)
     }
@@ -104,11 +131,15 @@
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{ data.words[2][0] }</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0">
+                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                class:zoomed4
+                on:click={toggleZoom4_First}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{ data.words[3][0] }</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0">
+                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                class:zoomed5
+                on:click={toggleZoom5_First}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{ data.words[4][0] }</p>
                 </button>
 
