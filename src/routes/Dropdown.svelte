@@ -67,4 +67,8 @@
 	</select>
 </form>
 
+<button on:click={handleSubmit}>
+	Submit
+</button>
+
 
