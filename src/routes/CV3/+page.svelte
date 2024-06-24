@@ -5,6 +5,7 @@
 
 <script>
     import { fly } from 'svelte/transition';
+    import Albert from '$lib/images/ALBERT.jpg';
     let isExperienceOpen = true;
     let isActivityOpen = true;
     let isEducationOpen = true;
@@ -65,6 +66,7 @@
     }
 
     .item_title {
+        color: var(--primary-color);
         margin-top: 1rem;
         margin-bottom: 1rem;
         font-size: 1.9rem;
@@ -81,18 +83,19 @@
     }
 
     .item_subtitle {
+        color: var(--primary-color);
         font-size: 1.4rem;
     }
 
     .container {
-        max-width: 1000px;
-        width: 90%;
+        max-width: 1000;
+        width: 100%;
         margin: 0 auto;
         display: grid;
-        padding: 10rem;
+        padding: 1rem;
         background: #070707;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     @media only screen and (max-width: 768px) {
@@ -216,7 +219,10 @@
     <div class="profile">
         <div class="profile_container">
             <div class="profile_profileImg">
-                <img src="./PHOTO IDENTITE 2023 2024.JPG" alt="Albert de Larrard">
+                <picture class="block">
+                    <source srcset={Albert} type="image/jpg" />
+                    <img class="object-cover" src={Albert} alt="ALBERT" />
+                </picture>
             </div>
             <div>
                 <h1 class="profile_name">
@@ -250,7 +256,7 @@
                         <p class="item_preTitle">Paris : janvier 2021</p>
                         <h4 class="item_title">Hôtel des Ventes Deburaux/Duplessis - Maître Deburaux</h4>
                         <p class="item_subtitle">Stagiaire clerc de Commissaire Priseur</p>
-                        <ul class="exp_list description">
+                        <ul class="exp_list description">ç
                             <li>Relation client dont présentation des articles aux clients avant les ventes.</li>
                             <li>Co-organisation des ventes à Drouot et gestion téléphonique des clients internationaux durant les ventes.</li>
                         </ul>
