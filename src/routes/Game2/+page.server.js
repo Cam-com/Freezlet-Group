@@ -33,3 +33,5 @@ export async function load() {
         words: data.length ? [data[Rand].Word_ENG , data[Rand].Word_FR , data[Alea1].Word_FR , data[Alea2].Word_FR] : [null,null,null,null]
     };
 }
+
+

@@ -30,12 +30,6 @@
   //      window.location.reload(); // Reload the page
  //   }
 
-    // Function to handle the submit button click
-    //function handleSubmit() {
-
-
-    //}
-
     // Function to handle the "Next" button click
     function handleNext() {
         window.location.reload(); // Reload the page
