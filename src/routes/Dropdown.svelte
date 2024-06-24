@@ -6,7 +6,7 @@
 		},
 		{
 			id: 2,
-			text: `Chinese`
+			text: `Spanish`
 		},
 		{
 			id: 3,
@@ -66,5 +66,9 @@
 		{/each}
 	</select>
 </form>
+
+<button on:click={handleSubmit}>
+	Submit
+</button>
 
 
