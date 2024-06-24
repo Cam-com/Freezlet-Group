@@ -4,7 +4,7 @@
       phone: '+695476557',
       address: '8 Avenue de la Liberté, Charenton-le-Pont'
     };
-  </script>
+</script>
   
   <div class="bg-gray-800 text-white p-4 min-h-screen">
     <h1 class="text-3xl text-center mb-6">Contact Me</h1>

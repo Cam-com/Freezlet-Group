@@ -18,4 +18,4 @@
                 <p class="mt-2">Specialization course: Advanced Mathematics</p>
             </li>
         </div>
-<a href="src/routes/CV4/+page.svelte"class="text-right hover:underline">Home</a><br>
+<a href="/CV4"class="text-right hover:underline">Home</a><br>
