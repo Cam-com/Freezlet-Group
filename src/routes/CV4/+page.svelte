@@ -1,8 +1,8 @@
 <div class="bg-gray-800 text-white p-4">
     <nav class="flex justify-center space-x-4">
-      <a href="/education" class="hover:underline">Education</a>
-      <a href="/experience" class="hover:underline">Professional Experience</a>
-      <a href="/skills" class="hover:underline">My skills</a>
+      <a href="CV4/education" class="hover:underline">Education</a>
+      <a href="CV4/experience" class="hover:underline">Professional Experience</a>
+      <a href="CV4/skills" class="hover:underline">My skills</a>
     </nav>
   </div>
   <br>
