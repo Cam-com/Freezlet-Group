@@ -6,7 +6,7 @@
 		},
 		{
 			id: 2,
-			text: `Chinese`
+			text: `Spanish`
 		},
 		{
 			id: 3,
