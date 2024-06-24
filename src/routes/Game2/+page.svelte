@@ -45,33 +45,30 @@
     let zoomed2 = false;
     let zoomed3 = false;
     var selected = false;
-    var position = null;
+    var position = 0;
 
     function toggleZoom1() {
         selected = Mixwords[0]
-        var position = 1
+        position = 1
         zoomed1 = !zoomed1;
         zoomed2 = false;
         zoomed3 = false;
-        return position;
     }
 
     function toggleZoom2() {
         selected = Mixwords[1]
-        var position = 2
+        position = 2
         zoomed2 = !zoomed2;
         zoomed1 = false;
         zoomed3 = false;
-        return position;
     }
 
     function toggleZoom3() {
         selected = Mixwords[2]
-        var position = 3
+        position = 3
         zoomed3 = !zoomed3;
         zoomed2 = false;
         zoomed1 = false;
-        return position;
     }
 
 
@@ -84,10 +81,10 @@
 
     function handleSubmit(){
         if(selected == data.words[1]){
-            if(position=1){
+            if(position == 1){
                 correct1 = !correct1;
             }
-            else if(position=2){
+            else if(position == 2){
                 correct2 = !correct2;
             }
             else{
@@ -95,18 +92,16 @@
             }
         }
         else{
-            if(position=1){
+            if(position == 1){
                 error1 = !error1;
             }
-            else if(position=2){
+            else if(position == 2){
                 error2 = !error2;
             }
             else{
                 error3 = !error3;
             }
         }
-
-
     }
 
 </script>
@@ -183,5 +178,6 @@
             <button on:click={handleNext} class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Next</button>
         </div>
         <div>{ selected }</div>
+        <div>{ position }</div>
     </div>
 </div>
