@@ -25,6 +25,8 @@
 
 	let answer = '';
 
+	var QUERY = ['Simple_ENG','FIRST']
+
 	function handleSubmit() {
 		alert(
 			`answered question (${selected_learn.id}) (${selected_learn.text}) with "${answer}"
@@ -46,8 +48,11 @@
 			QUESTION = 'FIRST'
 		}
 
-
+		var QUERY = [TABLE,QUESTION];
+		return QUERY;
 	}
+
+
 </script>
 
 <p class="pb-2">

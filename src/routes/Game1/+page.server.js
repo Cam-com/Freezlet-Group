@@ -1,9 +1,10 @@
 import { supabase } from "$lib/db.js";
+import { QUERY } from "+Dropdown.svelte";
 
 export async function load() {
 
   // Fetching a random word from the HSK_3 table
-  const { data, error } = await supabase.from('Simple_Span').select();
+  const { data, error } = await supabase.from(QUERY[0]).select();
 
     if (error) {
     console.error('Error fetching data:', error);
@@ -19,3 +20,4 @@ export async function load() {
         word: data.length ? [data[Rand].Word_Span,data[Rand].Word_FR] : [null,null]
     };
 }
+
