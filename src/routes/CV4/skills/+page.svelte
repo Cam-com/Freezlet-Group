@@ -70,4 +70,4 @@
         </li>
     </ul>
 </div>
-<a href="src/routes/CV4/+page.svelte">Home</a>
+<a href="/CV4">Home</a>
