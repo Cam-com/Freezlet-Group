@@ -3,10 +3,16 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
+<script> 
+    import Fanny from '$lib/images/fanny_ferreira.jpeg';
+</script>
 
 <div class="max-w-4xl p-6 mx-auto mt-10 bg-white shadow-lg">
             <header class="mb-6 text-center">
-                <!--<img src="/Users/fannyferreira/Desktop/WEBSITE CREATION/CV/photo.jpeg" alt="Fanny Ferreira" class="w-32 h-32 mx-auto rounded-full">-->
+                <picture class="block">
+                    <source srcset={Fanny} type="image/jpeg" />
+                    <img class="object-cover" src={Fanny} alt="fanny_ferreira"/>
+                </picture>
                 <h1 class="text-3xl font-bold text-purple-800">Fanny Ferreira</h1>
                 <div class="mt-3 text-blue-800">
                     <p>Email: <a href="mailto:fanny.ferreira@essec.edu" class="text-blue-600 hover:underline">fanny.ferreira@essec.edu</a></p>
