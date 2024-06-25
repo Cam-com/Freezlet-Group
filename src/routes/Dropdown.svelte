@@ -32,11 +32,7 @@
 		return QUESTION;
 	}
 
-	export async function load() {
-		return {
-        	question: data.length ? QUESTION : [null,null]
-    	};
-	}
+	export const Q = QUESTION;
 
 </script>
 

@@ -1,21 +1,6 @@
 import { supabase } from "$lib/db.js";
 
 
-let languages = [
-    {id: 1, text: `English`},
-    {id: 2, text: `French`},
-    {id: 3, text: `Spanish`},
-    {id: 4, text: 'Chinese'}
-];
-
-
-
-
-
-
-
-
-
 export async function load() {
 
   // Fetching a random word from the HSK_3 table
@@ -29,11 +14,33 @@ export async function load() {
     };
     }
 
-    let Rand = Math.floor(Math.random()* 8);
+    
 
-  //  if(QUESTION[0] == 1){
-    //    var QLang = Word_ENG;
-    //}
+/*
+    var question = 'Word_ENG';
+    var answer = 'Word_FR'
+    const {Qcolumn, error1} = await supabase.from('Simple_TABLE').select(question);
+    const {Acolumn, error2} = await supabase.from('Simple_TABLE').select(answer);
+
+    if (error1) {
+      console.error('Error fetching data:', error1);
+      return {
+          word: [null,null],
+          error: error1.message,
+      };
+    }
+    if (error2) {
+      console.error('Error fetching data:', error2);
+      return {
+          word: [null,null],
+          error: error2.message,
+      };
+    }
+*/
+
+    const L = data.length;
+
+    let Rand = Math.floor(Math.random()* L);
 
     return {
         word: data.length ? [data[Rand].Word_ENG,data[Rand].Word_FR] : [null,null]

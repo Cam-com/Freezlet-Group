@@ -1,3 +1,8 @@
+<script>
+    export let data;
+</script>
+
+
 <h1 class="font-extrabold text-3xl">Memory</h1>
 
 <!--The Flash Card-->

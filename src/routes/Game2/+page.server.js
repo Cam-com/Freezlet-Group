@@ -13,7 +13,9 @@ export async function load() {
     };
     }
 
-    let Rand = Math.floor(Math.random()* 8);
+    const L = data.length;
+
+    let Rand = Math.floor(Math.random()* L);
 
     var Alea1 = Rand
     var Alea2 = Rand 
@@ -21,12 +23,12 @@ export async function load() {
 
     while (Alea1 == Rand)
         {
-            var Alea1 = Math.floor(Math.random()* 8);
+            var Alea1 = Math.floor(Math.random()* L);
         }
 
     while (Alea2 == Rand || Alea2 == Alea1)
         {
-            var Alea2 = Math.floor(Math.random()* 8);
+            var Alea2 = Math.floor(Math.random()* L);
         }
 
     return {

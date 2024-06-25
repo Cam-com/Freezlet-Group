@@ -1,5 +1,4 @@
 <script>
-    import Dropdown from './Dropdown.svelte';
 
     export let data;
 
@@ -21,13 +20,6 @@
         window.location.reload(); // Reload the page
     }
 </script>
-
-<!--
-<section>
-    <Dropdown />
-</section>
--->
-
 
 
 <h1 class="font-extrabold text-3xl">Flash cards</h1>
