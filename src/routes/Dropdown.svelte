@@ -30,7 +30,7 @@
 	let answer = '';
 
 	
-	var QUESTION = [1,2]
+	let QUESTION;
 
 
 	function handleSubmit() {
@@ -39,13 +39,13 @@
 		//	answered question (${selected_know.id}) (${selected_know.text}) with "${answer}"`
 		//);
 
+		QUESTION = [selected_learn.id, selected_know.id]; 
 		alert(
-			'You picked (${QUESTION})'
+			`You picked ${QUESTION}`
 		);
 
-		QUESTION = [selected_learn.id, selected_know.id]; 
-		
 		return QUESTION;
+
 	}
 
 
