@@ -442,7 +442,7 @@
 
 
     function handleSubmit() {
-        let Check = [[],[]]
+        let Check = [[100],[100]]
         for (var k=0 ; k<= 1 ; k++){
             for (var i=0 ; i<=5 ; i++){
                 for(var j=0 ; j<=1 ; j++){
@@ -452,10 +452,6 @@
                 };
             };
         };
-
-        alert(
-            `We have ${ Check } And we also have ${ position }`
-        );
 
         if(Check[0][0] == Check[1][0]){
 
@@ -625,11 +621,6 @@
 
         <div>
             <button on:click={handleSubmit} class="bg-blue-400 rounded-lg p-1 mx-24 shadow-md text-white font-bold m-5">Submit</button>
-        </div>
-
-        <div>
-            {selected}
-            {position}
         </div>
         
     </div>
