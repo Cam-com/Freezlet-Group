@@ -454,8 +454,7 @@
         };
 
         alert(
-            `We have ${ Check }`
-            `And we also have ${ position }`
+            `We have ${ Check } And we also have ${ position }`
         );
 
         if(Check[0][0] == Check[1][0]){
@@ -463,40 +462,40 @@
             // && Check[0][1] != Check[1][1]
 
 
-            if(position[0] == 0 || positon[1] == 0){
+            if(position[0] == 0 || position[1] == 0){
                 showDiv1 = true;
             }
-            if(position[0] == 1 || positon[1] == 1){
+            if(position[0] == 1 || position[1] == 1){
                 showDiv2 = true;
             }
-            if(position[0] == 2 || positon[1] == 2){
+            if(position[0] == 2 || position[1] == 2){
                 showDiv3 = true;
             }
-            if(position[0] == 3 || positon[1] == 3){
+            if(position[0] == 3 || position[1] == 3){
                 showDiv4 = true;
             }
-            if(position[0] == 4 || positon[1] == 4){
+            if(position[0] == 4 || position[1] == 4){
                 showDiv5 = true;
             }
-            if(position[0] == 5 || positon[1] == 5){
+            if(position[0] == 5 || position[1] == 5){
                 showDiv6 = true;
             }
-            if(position[0] == 6 || positon[1] == 6){
+            if(position[0] == 6 || position[1] == 6){
                 showDiv7 = true;
             }
-            if(position[0] == 7 || positon[1] == 7){
+            if(position[0] == 7 || position[1] == 7){
                 showDiv8 = true;
             }
-            if(position[0] == 8 || positon[1] == 8){
+            if(position[0] == 8 || position[1] == 8){
                 showDiv9 = true;
             }
-            if(position[0] == 9 || positon[1] == 9){
+            if(position[0] == 9 || position[1] == 9){
                 showDiv10 = true;
             }
-            if(position[0] == 10 || positon[1] == 10){
+            if(position[0] == 10 || position[1] == 10){
                 showDiv11 = true;
             }
-            if(position[0] == 11 || positon[1] == 11){
+            if(position[0] == 11 || position[1] == 11){
                 showDiv12 = true;
             }
         };
