@@ -233,7 +233,7 @@
                 </h1>
                 <p class="profile_title">Étudiant ESSEC/École du Louvre</p>
                 <p class="description">En double cursus afin de devenir commissaire-priseur.</p>
-                <a class="download" href="./cv.pdf" download="CV.pdf">Download</a>
+                <!--<a class="download" href="./cv.pdf" download="CV.pdf">Download</a>-->
             </div>
         </div>
     </div>
