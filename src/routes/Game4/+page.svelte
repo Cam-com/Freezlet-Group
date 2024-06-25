@@ -509,6 +509,8 @@
     .zoomed1, .zoomed2, .zoomed3, .zoomed4, .zoomed5, .zoomed6, .zoomed7, .zoomed8, .zoomed9, .zoomed10, .zoomed11, .zoomed12 {
         transform: scale(1.1); /* Adjust the scale value as needed */
         background-color: rgb(238, 244, 49);
+        color: black
+        
     }
 
     .showDiv1, .showDiv2, .showDiv3, .showDiv4, .showDiv5, .showDiv6, .showDiv7, .showDiv8, .showDiv9, .showDiv10, .showDiv11, .showDiv12 {
@@ -533,84 +535,84 @@
     <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md">
         <div class="flex flex-wrap justify-center mb-5">
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed1
                 class:showDiv1
                 on:click={toggleZoom1}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[0]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed2
                 class:showDiv2
                 on:click={toggleZoom2}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[1]}</p>
                 </button>
                 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed3
                 class:showDiv3
                 on:click={toggleZoom3}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[2]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed4
                 class:showDiv4
                 on:click={toggleZoom4}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[3]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed5
                 class:showDiv5
                 on:click={toggleZoom5}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[4]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed6
                 class:showDiv6
                 on:click={toggleZoom6}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[5]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed7
                 class:showDiv7
                 on:click={toggleZoom7}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[6]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed8
                 class:showDiv8
                 on:click={toggleZoom8}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[7]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed9
                 class:showDiv9
                 on:click={toggleZoom9}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[8]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed10
                 class:showDiv10
                 on:click={toggleZoom10}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[9]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed11
                 class:showDiv11
                 on:click={toggleZoom11}>
                     <p class="w-full h-full p-2 text-center border border-gray-300 resize-none">{Mixwords[10]}</p>
                 </button>
 
-                <button class="zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
+                <button class="text-white zoomable w-40 h-20 p-4 border border-gray-300 bg-white m-5 mb-0"
                 class:zoomed12
                 class:showDiv12
                 on:click={toggleZoom12}>
