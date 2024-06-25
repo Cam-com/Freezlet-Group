@@ -21,6 +21,16 @@
 
 
 
+    function handleBack() {
+        window.location.reload(); // Reload the page
+    }
+
+    function handleNext() {
+        window.location.reload(); // Reload the page
+    }
+
+
+
     let zoomed1 = false;
     let zoomed2 = false;
     let zoomed3 = false;
@@ -235,6 +245,16 @@
 
         </div>
 
-        <button on:click={handleSubmit} class="bg-blue-400 rounded-lg p-1 mx-24 shadow-md text-white font-bold m-5">Submit</button>
+        <div>
+            <button on:click={ handleBack } class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Back</button>
+            <button on:click={ handleSubmit } class="bg-blue-400 rounded-lg p-1 mx-24 shadow-md text-white font-bold m-5">Submit</button>
+            <button on:click={ handleNext } class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Next</button>
+        </div>
+
+        <div>
+            {selected}
+            {position}
+        </div>
+
     </div>
 </div>

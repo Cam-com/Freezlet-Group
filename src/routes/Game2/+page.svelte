@@ -30,6 +30,10 @@
   //      window.location.reload(); // Reload the page
  //   }
 
+    function handleBack() {
+        window.location.reload(); // Reload the page
+    }
+
     // Function to handle the "Next" button click
     function handleNext() {
         window.location.reload(); // Reload the page
@@ -168,10 +172,9 @@
 
         </div>
         <div>
+            <button on:click={handleBack} class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Back</button>
             <button on:click={handleSubmit} class="bg-blue-400 rounded-lg p-1 mx-24 shadow-md text-white font-bold m-5">Submit</button>
             <button on:click={handleNext} class="bg-yellow-400 rounded-lg p-1 px-3 shadow-md text-white font-bold m-5 mx-2 mb-0">Next</button>
         </div>
-        <div>{ selected }</div>
-        <div>{ position }</div>
     </div>
 </div>

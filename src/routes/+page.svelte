@@ -1,9 +1,3 @@
-<script>
-	import Counter from './Counter.svelte';
-	import First_Image from '$lib/images/ai-generated-homepage.jpeg';
-	import Dropdown from './Dropdown.svelte';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 	<meta name="Welcome" content="Welcome" />
@@ -29,15 +23,12 @@
 
 		<p class="text-blue-500">Try our new<br />Freezlet App test</p>
 	</h1>
-	-->
+	
 	
 	<h2 class="mb-10">
 		Select the <strong>language you want to learn</strong> and your <strong>origin language</strong>
 	</h2>
-
-
-	<Dropdown />
-
+-->
 </section>
 
 <style>

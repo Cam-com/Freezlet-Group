@@ -5,22 +5,21 @@
 	import { goto } from "$app/navigation";
 </script>
 
+
 <div class="app">
+
 	<Header />
-	
+<!--	
 	<div class="fixed top-20 left-0 max-w-40">
 		<button on:click={() => goto("/login")}>Login</button>
 		<span class="text-lg ml-2">cooper@gmail.com</span>
 		<button on:click={() => console.log("logging out")}>Logout</button>
 	</div>
+-->
 
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style>
@@ -41,21 +40,4 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
 </style>
