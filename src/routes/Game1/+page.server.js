@@ -4,7 +4,7 @@ import { supabase } from "$lib/db.js";
 export async function load() {
 
   // Fetching a random word from the HSK_3 table
-  const { data, error } = await supabase.from('Simple_ENG').select();
+  const { data, error } = await supabase.from('Simple_TABLE').select();
 
     if (error) {
     console.error('Error fetching data:', error);
@@ -17,7 +17,6 @@ export async function load() {
     let Rand = Math.floor(Math.random()* 8);
 
     return {
-        word: data.length ? [data[Rand].Word_Span,data[Rand].Word_FR] : [null,null]
+        word: data.length ? [data[Rand].Word_ENG,data[Rand].Word_FR] : [null,null]
     };
 }
-

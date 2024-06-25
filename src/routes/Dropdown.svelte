@@ -6,11 +6,15 @@
 		},
 		{
 			id: 2,
-			text: `Spanish`
+			text: `French`
 		},
 		{
 			id: 3,
-			text: `French`
+			text: `Spanish`
+		},
+		{
+			id: 4,
+			text: 'Chinese'
 		}
 	];
 
@@ -25,31 +29,23 @@
 
 	let answer = '';
 
-	var QUERY = ['Simple_ENG','FIRST']
+	
+	var QUESTION = [1,2]
+
 
 	function handleSubmit() {
+		//alert(
+		//	`answered question (${selected_learn.id}) (${selected_learn.text}) with "${answer}"
+		//	answered question (${selected_know.id}) (${selected_know.text}) with "${answer}"`
+		//);
+
 		alert(
-			`answered question (${selected_learn.id}) (${selected_learn.text}) with "${answer}"
-			answered question (${selected_know.id}) (${selected_know.text}) with "${answer}"`
+			'You picked (${QUESTION})'
 		);
 
-		if(selected_learn.id == 1 || selected_learn.id == 3){
-			var TABLE = 'Simple_ENG'
-
-			if(selected_know.id == 'English'){
-				QUESTION = 'SECOND'
-			}
-			if(selected_know_know.id =  'French'){
-				QUESTION = 'FIRST'
-			}
-		}
-		if(selected_learn.id == 2){
-			var TABLE = 'Simple_Span'
-			QUESTION = 'FIRST'
-		}
-
-		var QUERY = [TABLE,QUESTION];
-		return QUERY;
+		QUESTION = [selected_learn.id, selected_know.id]; 
+		
+		return QUESTION;
 	}
 
 
