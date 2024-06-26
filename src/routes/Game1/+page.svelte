@@ -28,8 +28,8 @@
     // Function to handle the "Next" button click
     function handleBack() {
         let ppp = Memory.length-1
-        question = data.words[Memory[ppp]][0]
-        answer = data.words[Memory[ppp]][1]
+        question = data.word[Memory[ppp]][0]
+        answer = data.word[Memory[ppp]][1]
 
         return [question,answer]
     }
