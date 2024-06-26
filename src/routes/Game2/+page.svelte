@@ -1,6 +1,7 @@
 <script>
     export let data;
 
+
     function mixup(){
         var correcte = Math.floor(Math.random()* 3);
         let mixwords = new Array(3);

@@ -6,6 +6,7 @@
     let answer = data.word[0][1]
 
     var Memory = []
+    let L = data.word.length
 
     function pickone(){
 
@@ -18,7 +19,7 @@
 
         showDiv = false
 
-        return [question,answer]
+        return [question,answer,L]
     }
 
     // Reactive variable to track the visibility of the div
