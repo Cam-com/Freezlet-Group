@@ -38,13 +38,20 @@ export async function load() {
     }
 */
 
-    const L = data.length;
+    var Memo = []
+    let REQUEST = []
+    let ERROR = []
 
-    let Rand = Math.floor(Math.random()* L);
+    for( var i=0 ; i < data.length ; i++){
+        Memo[i] = i
+        REQUEST[i] = [data[i].Word_ENG,data[i].Word_FR]
+        ERROR[i] = [null,null]
+
+    }
+
 
     return {
-        word: data.length ? [data[Rand].Word_ENG,data[Rand].Word_FR] : [null,null]
+        word: data.length ? REQUEST : ERROR
     };
 
-    
 }
