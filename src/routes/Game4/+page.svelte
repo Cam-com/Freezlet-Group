@@ -525,10 +525,6 @@
 
 <h1 class="font-extrabold text-3xl">Memory</h1>
 
-<div>
-    { data.words}
-
-</div>
 
 <!--The Flash Card-->
 <div class="flex items-center justify-center min-h-screen">
