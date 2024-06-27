@@ -9,7 +9,7 @@ export async function load() {
     if (error) {
     console.error('Error fetching data:', error);
     return {
-        word: [null,null],
+        word: ['null','null'],
         error: error.message,
     };
     }
@@ -19,7 +19,7 @@ export async function load() {
 
     for( var i=0 ; i < data.length ; i++){
         REQUEST[i] = [data[i].Word_ENG,data[i].Word_FR]
-        ERROR[i] = [null,null]
+        ERROR[i] = ['empty','empty']
 
     }
 
