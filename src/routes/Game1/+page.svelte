@@ -8,23 +8,76 @@
     let showPinyin = false;
 
     let counter = 0;
-    
-    let L = data.word.length;
+    let selected = data.word;
+
+    let K = data.word.length;
     let Q = 0;
     let A = 1;
     let P = 2;
-    let X = 3;
+    let G = 3;
+    let X = 4;
 
+    let Voc_pack = "Basic"
+
+    function select(){
+        selected = [];
+        let j=0;
+
+
+            for(var i=0 ; i<K ; i++){
+                if(data.word[i][G] == Voc_pack){
+                    selected[j] = data.word[i];
+                    j += 1;
+                }
+            }      
+
+            L = selected.length;
+            question = selected[Rand][Q];
+            answer = selected[Rand][A];
+            Pinyin = selected[Rand][P];
+            correct = L - counter;
+
+            Reset();
+
+        return[selected, L, question, answer, Pinyin, correct, PickOne()]
+    } 
+
+    function Basic(){
+        Voc_pack = "Basic";
+        return[Voc_pack, select()]
+    }
+
+    function Intermediary(){
+        Voc_pack = "B-1";
+        return[Voc_pack, select()]
+    }
+
+    function Advanced(){
+        Voc_pack = "A-1";
+        return[Voc_pack, select()]
+    }
+
+    function All_selected(){
+        selected = data.word;
+        L = selected.length;
+        question = selected[Rand][Q];
+        answer = selected[Rand][A];
+        Pinyin = selected[Rand][P];
+        correct = L - counter;
+
+        Reset();
+
+        return[selected, L, question, answer, Pinyin, correct, PickOne()]
+    }
+
+    let L = selected.length;
     let Rand = 0;
-    let question = data.word[Rand][Q];
-    let answer = data.word[Rand][A];
-    let Pinyin = data.word[Rand][P];
+    let question = selected[Rand][Q];
+    let answer = selected[Rand][A];
+    let Pinyin = selected[Rand][P];
     let correct = L - counter;
     let position_in_data = 0;
     let Left2learn_positions_in_data = [0];
-
-    let Check = data.word[Rand][X]
-
 
 
     function PickOne(){
@@ -38,7 +91,7 @@
         Left2learn_positions_in_data = [0];
         
         for(var i=0; i < L; i++){
-            let position = data.word[i][X];
+            let position = selected[i][X];
             if( position == false){
                 Left2learn_positions_in_data[count] = i;
                 count = Left2learn_positions_in_data.length;
@@ -53,9 +106,9 @@
         else{
             Rand = Math.floor(Math.random()* count);
             position_in_data = Left2learn_positions_in_data[Rand];
-            question = data.word[position_in_data][Q];
-            answer = data.word[position_in_data][A];
-            Pinyin = data.word[position_in_data][P];
+            question = selected[position_in_data][Q];
+            answer = selected[position_in_data][A];
+            Pinyin = selected[position_in_data][P];
             correct = L - count;
             counter = count;
         }
@@ -69,13 +122,13 @@
 
     function Validate(){
         var P = position_in_data;
-        data.word[P][X] = true;
+        selected[P][X] = true;
         return [PickOne()]
     }
 
     function Reset(){
         for(var i=0; i < L; i++){
-            data.word[i][X] = false;
+            selected[i][X] = false;
         }
         return [PickOne()]
     }
@@ -83,13 +136,15 @@
     function Ch(){
         Q = 0;
         A = 1;
-        return [Q,A]
+        Reset()
+        return [Q,A,PickOne()]
     }
 
     function Trad(){
         Q = 1;
         A = 0;
-        return [Q,A]
+        Reset()
+        return [Q,A,PickOne()]
     }
 
     function Clue(){
@@ -102,7 +157,12 @@
 <!--
 <div>
     Check { Check } <br>
+    Double check { selected[7] } <br>
+    Selected { selected } <br>
     L { L } <br>
+    K { K } <br>
+
+    
     counter { counter } <br>
     Left to learn { Left2learn_positions_in_data } <br>
     position in data { position_in_data } <br>
@@ -111,6 +171,7 @@
     showButton { showButton } <br>
     showCard { showCard } <br>
     showDiv { showDiv } <br>
+    
 </div>
 -->
 
@@ -124,6 +185,22 @@
     <button on:click={Trad} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
                                     hover:bg-orange-300  focus:bg-orange-600">
         Trad
+    </button>
+    <button on:click={All_selected} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-blue-300  focus:bg-blue-600">
+        All
+    </button>
+    <button on:click={Basic} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-blue-300  focus:bg-blue-600">
+        Basic
+    </button>
+    <button on:click={Advanced} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-blue-300  focus:bg-blue-600">
+        A-1
+    </button>
+    <button on:click={Intermediary} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-blue-300  focus:bg-blue-600">
+        B-1
     </button>
 </div>
 
@@ -167,7 +244,7 @@
                             </div>
 
                             <div class="mt-0 mx-1 mb-0 rounded-lg text-center p-1">
-                                TOTAL { data.word.length }
+                                TOTAL { L }
                             </div>
 
                             <div class="w-8 h-8 bg-green-500 mt-0 mx-1 mb-0 rounded-lg text-white text-center p-1">
