@@ -18,7 +18,7 @@ export async function load() {
     let ERROR = []
 
     for( var i=0 ; i < data.length ; i++){
-        REQUEST[i] = [data[i].CH_word,data[i].FR_word,data[i].Pinyin,data[i].Grouping,false]
+        REQUEST[i] = [data[i].CH,data[i].FR,data[i].Pinyin,data[i].Grouping,false]
         ERROR[i] = ['empty','empty','empty','empty','empty']
 
     }

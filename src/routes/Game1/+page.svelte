@@ -57,6 +57,26 @@
         return[Voc_pack, select()]
     }
 
+    function HSK3(){
+        Voc_pack = "HSK3";
+        return[Voc_pack, select()]
+    }
+
+    function Advanced2(){
+        Voc_pack = "A-2";
+        return[Voc_pack, select()]
+    }
+
+    function Basic2(){
+        Voc_pack = "B-2";
+        return[Voc_pack, select()]
+    }
+
+    function Basic3(){
+        Voc_pack = "B-3";
+        return[Voc_pack, select()]
+    }
+
     function All_selected(){
         selected = data.word;
         L = selected.length;
@@ -190,23 +210,40 @@
                                     hover:bg-blue-300  focus:bg-blue-600">
         All
     </button>
-    <button on:click={Basic} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
-                                    hover:bg-blue-300  focus:bg-blue-600">
+    <button on:click={Basic} class="bg-gray-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-gray-300  focus:bg-gray-600">
         Basic
     </button>
-    <button on:click={Advanced} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
-                                    hover:bg-blue-300  focus:bg-blue-600">
-        A-1
+    <button on:click={HSK3} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-orange-300  focus:bg-orange-600">
+        HSK3
     </button>
-    <button on:click={Intermediary} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
-                                    hover:bg-blue-300  focus:bg-blue-600">
+    <button on:click={Intermediary} class="bg-green-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-green-300  focus:bg-green-600">
         B-1
     </button>
+    <button on:click={Basic2} class="bg-green-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-green-300  focus:bg-green-600">
+        B-2
+    </button>
+    <button on:click={Basic3} class="bg-green-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-green-300  focus:bg-green-600">
+        B-3
+    </button>
+    <button on:click={Advanced} class="bg-red-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-red-300  focus:bg-red-600">
+        A-1
+    </button>
+    <button on:click={Advanced2} class="bg-red-100 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+                                    hover:bg-red-300  focus:bg-red-600">
+        A-2
+    </button>
+    
 </div>
 
 {#if showButton}
 <div>
-    <button on:click={PickOne} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+    <button on:click={PickOne} class="bg-yellow-200 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
                                      hover:bg-yellow-300">
         Start !
     </button>
@@ -218,7 +255,7 @@
 {#if showCard}  
 
     <div>
-        <button on:click={Reset} class="bg-white rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
+        <button on:click={Reset} class="bg-yellow-200 rounded-lg p-1 px-3 shadow-md text-black font-bold mx-2 mb-3
                                         hover:bg-yellow-300">
             Start from top
         </button>
@@ -237,7 +274,7 @@
                     <div class="mt-3 p-2 px-2 bg-white rounded-lg font-bold">
                         <div class="flex justify-center">
 
-                            <div class="w-8 h-8 bg-red-500 mt-0 mx-1 mb-0 rounded-lg text-white text-center p-1">
+                            <div class="w-10 h-8 bg-red-500 mt-0 mx-1 mb-0 rounded-lg text-white text-center p-1">
                                 <p class="font-extrabold">
                                     { counter }
                                 </p>
@@ -247,7 +284,7 @@
                                 TOTAL { L }
                             </div>
 
-                            <div class="w-8 h-8 bg-green-500 mt-0 mx-1 mb-0 rounded-lg text-white text-center p-1">
+                            <div class="w-10 h-8 bg-green-500 mt-0 mx-1 mb-0 rounded-lg text-white text-center p-1">
                                 <p class="font-extrabold">
                                     { correct }
                                 </p>
