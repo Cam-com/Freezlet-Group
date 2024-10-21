@@ -53,7 +53,7 @@
 			<p class="block w-32 text-center">Flash cards</p>
 		</div></a>
 
-		<a href="/Game2">
+		<a href="/Game2_copy">
 		<div class="block border-2 border-black m-5 p-10
 		md:mx-10 md:my-5 md:p-15 lg:mx-15 lg:my-5 lg:p-20 xl:mx-20 xl:my-5 xl:p-25
 		hover:bg-orange-300">
