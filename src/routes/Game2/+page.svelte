@@ -3,6 +3,15 @@
 
     const L = data.word.length;
 
+    let counter = 0;
+    let Selected = data.word;
+
+    let Q = 0;
+    let A = 1;
+    let P = 2;
+    let G = 3;
+    let X = 4;
+
     function draw(){
         let Rand = Math.floor(Math.random()* L);
         var Alea1 = Rand
@@ -14,7 +23,7 @@
         while (Alea2 == Rand || Alea2 == Alea1)
             {var Alea2 = Math.floor(Math.random()* L);}
 
-        Words_drawn = [data.word[Rand][0],data.word[Rand][1],data.word[Alea1][1],data.word[Alea2][1]];
+        Words_drawn = [Selected[Rand][Q],Selected[Rand][A],Selected[Alea1][A],Selected[Alea2][A],Selected[Rand][P]];
 
         return[Words_drawn,Rand,Alea1,Alea2]
     }

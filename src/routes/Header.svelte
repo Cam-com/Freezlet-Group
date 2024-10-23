@@ -20,20 +20,20 @@
 				<a href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/CV1' ? 'page' : undefined}>
-				<a href="/CV1">CV 1</a>
+				<a href="/CV1">My CV</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/CV2' ? 'page' : undefined}>
-				<a href="/CV2">CV 2</a>
+			<li aria-current={$page.url.pathname === '/Game1' ? 'page' : undefined}>
+				<a href="/Game1">Game 1</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/CV3' ? 'page' : undefined}>
-				<a href="/CV3">CV 3</a>
-			</li>	
-			<li aria-current={$page.url.pathname === '/CV4' ? 'page' : undefined}>
-				<a href="/CV4">CV 4</a>
-			</li>	
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Kit Game</a>
-			</li>	
+			<li aria-current={$page.url.pathname === '/Game2' ? 'page' : undefined}>
+				<a href="/Game2">Game 2</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/Game3' ? 'page' : undefined}>
+				<a href="/Game3">Game 3</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/Game4' ? 'page' : undefined}>
+				<a href="/Game4">Game 4</a>
+			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
